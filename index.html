@@ -13,7 +13,7 @@
   <body>
     <div style="margin-top: 50px">
       <div><input type="button" value="execAsync" onclick="postToNative('Hello')"></div>
-      <div><input type="button" value="fetchTest1" onclick="fetchTest()"></div>
+      <div><input type="button" value="fetchTest2" onclick="fetchTest()"></div>
       <br/>
       <br/>
       <br/>
@@ -54,7 +54,7 @@
     async function fetchTest() {
     // This URL is 'generated' by the native code.  Normally would be the result of a Javascript API call
     // for testing, just rely on the first generated URL to always be 0.
-        var t = await fetch("https://instantq.github.io/Users/qiur/Downloads/Drawing22.dwg");
+        var t = await fetch("https://instantq.github.io/Users/qiur/Downloads/Drawing23.dwg");
         var result = await t.blob();
         var resultAsText = await result.text();
         console.log(resultAsText);
