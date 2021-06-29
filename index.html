@@ -12,7 +12,7 @@
   
   <body>
     <div style="margin-top: 50px">
-      <div><input type="button" value="fetchTest3" onclick="fetchTest()"></div>
+      <div><input type="button" value="fetchTest4" onclick="fetchTest()"></div>
       <br/>
       <br/>
       <br/>
@@ -32,6 +32,8 @@
     async function fetchTest() {
     // This URL is 'generated' by the native code.  Normally would be the result of a Javascript API call
     // for testing, just rely on the first generated URL to always be 0.
+        await fetch("https://www.autocad.com");  
+      
         var t = await fetch("adsklocal://instantq.github.io/Users/qiur/Downloads/Drawing23.dwg");
         var result = await t.blob();
         var resultAsText = await result.text();
